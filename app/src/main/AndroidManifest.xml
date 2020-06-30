@@ -13,8 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SocialMediaActivity"></activity>
+
+        <activity android:name=".SocialMediaActivity"
+            android:theme="@style/AppThemeC.NoActionBar"/>
+
         <activity android:name=".LoginActivity" />
+
         <activity android:name=".SignUpActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".MainActivity" />
 
         <meta-data
@@ -33,6 +38,7 @@
         <meta-data
             android:name="com.parse.CLIENT_KEY"
             android:value="@string/back4app_client_key" />
+
     </application>
 
 </manifest>
